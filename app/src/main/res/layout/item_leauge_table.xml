@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#fff"
+    android:layoutDirection="rtl">
+
+
+    <RelativeLayout
+        android:id="@+id/rl__iLeagueTable_placeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_iLeagueTable_place"
+            android:layout_width="@dimen/iconSize_medium"
+            android:layout_height="@dimen/iconSize_medium"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:src="@drawable/ic_medal_gold"
+            android:visibility="invisible" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iLeagueTable_place"
+            android:layout_width="@dimen/iconSize_medium"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSize_toolbar" />
+
+    </RelativeLayout>
+
+    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+        android:id="@+id/tv_iLeagueTable_teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_toEndOf="@id/rl__iLeagueTable_placeContainer"
+        android:gravity="center"
+        android:text="یوونتوس"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iLeagueTable_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="1" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iLeagueTable_difference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="32"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_toEndOf="@id/rl__iLeagueTable_placeContainer"
+        android:background="@drawable/bc_shadow" />
+
+</RelativeLayout>

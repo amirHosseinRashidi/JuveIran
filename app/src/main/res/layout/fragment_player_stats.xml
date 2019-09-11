@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".fragment.PlayerStatsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/bg_border_white">
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_FplayerStats_playerEnName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:textColor="@color/textColorDark"
+            android:textSize="@dimen/textSize_toolbar"
+            tools:text="Cristiano Ronaldo" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_FplayerStats_playerFaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_FplayerStats_playerEnName"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeNormal"
+            tools:text="کریستیانو رونالدو" />
+
+        <View
+            android:id="@+id/v_FplayerStats_divider1"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_below="@id/tv_FplayerStats_playerFaName"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/divider_primary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/v_FplayerStats_divider"
+            android:layout_below="@id/v_FplayerStats_divider1"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/img_FplayerStats_static1Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margin_xsamll"
+                        android:layout_weight="2"
+                        android:src="@drawable/pic_goal" />
+
+                    <TextView
+                        android:id="@+id/tv_FplayerStats_static1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/textSize_small"
+                        tools:text="21" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_FplayerStats_static2Image"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/margin_xsamll"
+                        android:layout_weight="2"
+                        android:src="@drawable/pic_gate" />
+
+                    <TextView
+                        android:id="@+id/tv_FplayerStats_static2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="21"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/textSize_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                            android:id="@+id/tv_FplayerStats_post"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/textSize_small"
+                            tools:text="@string/goalKeeper" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_xsamll"
+                            android:layout_marginTop="@dimen/margin_xsamll"
+
+                            android:src="@drawable/ic_player_shirt" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_FplayerStats_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="21"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/textSize_small" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/v_FplayerStats_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_above="@id/img_FplayerStats_playerImage"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/divider_primary" />
+
+        <LinearLayout
+            android:id="@+id/ll_FplayerStats_personalDetail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@id/img_FplayerStats_playerImage"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/age"
+                    android:textSize="@dimen/textSize_xxsmall" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_FplayerStats_age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/textSize_xxsmall"
+                    tools:text="38" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/minute"
+                    android:textSize="@dimen/textSize_xxsmall" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_FplayerStats_minute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/textSize_xxsmall"
+                    tools:text="38" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/matchCount"
+                    android:textSize="@dimen/textSize_xxsmall" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_FplayerStats_matchCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/textSize_xxsmall"
+                    tools:text="38" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nationality"
+                    android:textSize="@dimen/textSize_xxsmall" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_FplayerStats_nationality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/textSize_xxsmall"
+                    tools:text="38" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_FplayerStats_playerImage"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/pic_ronaldo" />
+    </RelativeLayout>
+</RelativeLayout>

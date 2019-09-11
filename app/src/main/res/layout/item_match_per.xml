@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+        android:id="@+id/tv_iMatchPer_playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/textSize_xxsmall"
+        tools:text="دیبالا" />
+
+    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+        android:id="@+id/tv_iMatchPer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_xsamll"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:textSize="@dimen/textSize_small"
+        tools:text="'2" />
+
+    <ImageView
+        android:id="@+id/img_iMatchPer_icon"
+        android:layout_width="@dimen/iconSize_small"
+        android:layout_height="@dimen/iconSize_small"
+        tools:src="@drawable/ic_arrow_in_24dp" />
+
+
+</RelativeLayout>

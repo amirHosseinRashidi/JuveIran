@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Amain_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activity.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_Amain_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorToolbarBackground"
+        android:elevation="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="">
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/tv_Amain_toolbarSite"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:background="@drawable/bc_shoptext"
+            android:gravity="center"
+            android:text="@string/ourSite"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_xsmall" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rImg_Amain_userIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/ourSite"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_xsmall"
+            android:visibility="gone"
+            app:riv_corner_radius="12dp"
+            tools:src="@drawable/logo"
+            tools:targetApi="m" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSize_toolbar" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fl_Amain_tabsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bnv_Amain_bottomMenu"
+        android:layout_below="@id/tb_Amain_toolbar" />
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnv_Amain_bottomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorBottomNavigation"
+        android:theme="@style/Widget.BottomNavigationView"
+        app:itemIconTint="@drawable/selector_bottomnavigation"
+        app:itemTextColor="@drawable/selector_bottomnavigation"
+        app:menu="@menu/main_activity_bottomnavigation" />
+
+
+</RelativeLayout>

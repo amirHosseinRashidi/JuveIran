@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".activity.ShortArticleCommentsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_AshortArticleComments_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title=" ">
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_AshortArticleComments_toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shortArticleActivity_toolbarTitle"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_toolbar" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_AshortArticleComments_noComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center_horizontal"
+            android:text="برای این خبر نظری ثبت نشده!"
+            android:textSize="@dimen/textSize_big"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_AshortArticleComments_commentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_AshortArticleComments_sendCommentContainer"
+            tools:listitem="@layout/item_comment" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_AshortArticleComments_sendCommentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/textColor">
+
+            <com.khayyamapp.juveiran.custom_views.IranSansEditText
+                android:id="@+id/et_AshortArticleComments_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:hint="@string/fEnterComment_commentContent"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:textColorHint="@color/soccerColorAccentOff"
+                android:textSize="@dimen/textSize_small" />
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:id="@+id/tv_AshortArticleComments_submitComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/submit"
+                android:textColor="@color/soccerColorAccentOff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

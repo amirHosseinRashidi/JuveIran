@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">یووه ایران</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="topic_juveiran">juveiran</string>
+
+    <string name="msg_subscribed">subscribe successful</string>
+    <string name="msg_subscribe_failed">subscribe faild</string>
+
+
+    <string name="bn_text_categories">دسته بندی</string>
+    <string name="bn_text_news">اخبار</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ti_text_shortNews">اخبار کوتاه</string>
+
+
+    <string name="ti_text_lastestNews">آخرین اخبار</string>
+    <string name="ti_text_mostViewed">پربازدید</string>
+    <string name="ti_text_categories">دسته بندی</string>
+    <string name="toolbarTitle">یووه ایران</string>
+    <string name="lurem_long">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</string>
+    <string name="lurem_medium">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</string>
+    <string name="nameTest">امیرحسین رشیدی</string>
+    <string name="registerFragment_registerButtonText">ثبت نام</string>
+    <string name="loginFragmentTextLoginButton">ورود</string>
+    <string name="articleFragment_EnterCommentHint">نظر خود را وارد کنید . . .</string>
+    <string name="articleDetailFragment_btn_readMore">بیشتر بخوانید</string>
+    <string name="fArticleDetail_menuItem_share">به اشتراک گزاری</string>
+    <string name="fArticleDetail_menuItem_bookmark">بعدا میخانم</string>
+    <string name="fArticleDetail_shareMessage">به اشتراک گزاری این خبر</string>
+    <string name="fArticleReadMore_errorPageText">شما یه اینترنت دسترسی ندارید!</string>
+    <string name="fEnterComment_toolbarText">ثبت نظر</string>
+    <string name="fEnterComment_commentContent">نظر خود را وارد کنید . . .</string>
+    <string name="fEnterComment_commentTitle">نام خود را وارد کنید</string>
+    <string name="api_error_respons">لطفا اینترنت خود را بررسی کنید</string>
+    <string name="AaboutUs_toolbarTitle">درباره ما</string>
+    <string name="message_login_successful">شما با موفقیت وارد حساب کاربری خود شدید</string>
+    <string name="message_login_error">ایمیل با رمز ورود اشتباه است!</string>
+    <string name="fRegister_inputs_name">نام خود را وارد کنید</string>
+    <string name="fRegister_inputs_email">ایمیل یا شماره تلفن خود را وارد کنید</string>
+    <string name="fRegister_inputs_password">رمز ورود</string>
+    <string name="fRegister_inputs_rePassword">تکرار رمز ورود</string>
+    <string name="fRegister_error_checkInputs">لطفا ورودی های خود را کنترل کنید</string>
+    <string name="fRegister_error_checkPassword">رمز ورود باید مطابقت داشته باشد</string>
+    <string name="fRegisterFragment_register_successful">اطلاعات شما ثبت شد</string>
+    <string name="fRegisterFragment_register_error">لطفا دوباره تلاش کنید !</string>
+    <string name="layout_headerNavigation_guest">ورود,ثبت نام</string>
+
+
+    <string name="menuItem_login">ورود,ثبت نام</string>
+    <string name="menuItem_logOut">خروج از حساب</string>
+    <string name="menuItem_category">دسته بندی</string>
+    <string name="menuItem_articles">آخرین اخبار</string>
+    <string name="menuItem_shortArticles">اخبار کوتاه</string>
+    <string name="menuItem_openSite">باز کردن سایت</string>
+    <string name="menuItem_aboutUs">درباره ما</string>
+
+    <string name="aCreateArticle_titleText">موضوع خبر . . .</string>
+    <string name="aCreateArticle_contentText"> خبر . . .</string>
+    <string name="aCreateArticle_enterArticle">ثبت</string>
+    <string name="layout_loginOrRegister_alertMessage">برای ارسال نظر باید وارد حساب کاربری شوید</string>
+    <string name="layout_loginOrRegister_alertTitle">وارد حساب خود شوید</string>
+    <string name="login">ورود</string>
+    <string name="closeDialog">بستن</string>
+    <string name="aUpdateProfile_toolbarTitle">تغییر اطلاعات</string>
+    <string name="aUpdateProfile_changePic">تغییر عکس</string>
+    <string name="aUpdateProfile_uploadText">تغییر اطلاعات</string>
+    <string name="pemissionError">ما دسترسی نداریم!</string>
+    <string name="new_name">نام جدید . . .</string>
+    <string name="tryAgain">لطفا دوباره امتحان کنید!</string>
+    <string name="fLogin_etEmail">ایمیل یا شماره تلفن</string>
+    <string name="fLogin_etPassword">رمز عبور</string>
+    <string name="submit">ثبت</string>
+    <string name="shortArticleActivity_toolbarTitle">نظر ها</string>
+    <string name="sendedArticles">خبر</string>
+    <string name="comment">نظر</string>
+    <string name="forgotPassword">فراموشی رمز عبور</string>
+    <string name="register">ایجاد حساب کاربری</string>
+    <string name="loginToAccount">ورود به حساب کاربری</string>
+    <string name="getInToApp">وارد شدن به برنامه</string>
+    <string name="recoverPasswordText">برای بازیابی رمز عبور ایمیل یا شماره تلفن خود را وارد کنید تا لینک بازیابی را برای شما ارسال کنیم</string>
+    <string name="getVerifyCode">دریافت کد</string>
+    <string name="pleaseEnterEmailorPhoneNumber">لطفا ایمیل یا شماره تلفن وارد کنید</string>
+    <string name="passwordLengthMustBeMoreThanFive">رمز عبور باید حد اقل 5 کاراکتر باشد </string>
+    <string name="pleaseEnterAnImage">لطفا یک عکس انتخاب کنید</string>
+    <string name="enterVerifyCode">کد فعال سازی را وارد کنید</string>
+    <string name="enterNewPassword">رمز جدید را وارد کنید</string>
+    <string name="reEnterNewPassword">رمز جدید را دوباره وارد کنید</string>
+    <string name="theImageSizeIsMoreThanOneMeg">حجم عکس بیشتر از دو مگابایت است</string>
+    <string name="verifyCode">تایید کد</string>
+    <string name="pleaseEnterNewPass">لطفا رمز عبور را وارد کنید</string>
+    <string name="passwordMustBeLikeEachother">رمز ها ورود باید شبیه باشند</string>
+    <string name="passwordSuccessfullyChanged">رمز عبور با موفقیت تغییر کرد</string>
+    <string name="changePassword">تغییر رمز عبور</string>
+    <string name="codeIsNotCorrect">کد وارد شده صحیح نیست!</string>
+    <string name="emailOrPhoneDoesNotExists">ایمیل یا شماره تلفن موجود نیست!</string>
+    <string name="errorHappens">خطایی رخ داد</string>
+    <string name="madedByMeText">طراحی و پیاده سازی شده توسط امیرحسین رشیدی با تشکر ویژه از خیام اپلیکیشن</string>
+    <string name="about_us_text1">یووه ایران بزرگ ترین کانون هواداران یوونتوس در ایران</string>
+    <string name="about_us_text2">شما عزیزان با این اپلیکیشن می توانید از آخرین اخبار روز یوونتوس در کمترین زمان با خبر شوید و نظرات خود را برای ما ارسال کنید .</string>
+    <string name="saComments">نظر های خبر کوتاه</string>
+    <string name="commentsText">نظر ها</string>
+    <string name="gameResults">نتایج بازی ها</string>
+    <string name="leagueTable">جدول لیگ</string>
+    <string name="players">بازیکنان</string>
+    <string name="shop">فروشگاه</string>
+    <string name="score">نمره</string>
+    <string name="nextGames">بازی بعدی</string>
+    <string name="playedGames">بازی ها انجام شده</string>
+    <string name="ourSite"> سایت </string>
+    <string name="youLoggedOut">شما از حساب خود خارج شدید</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="notificationSetting">تنظیمات اعلان ها</string>
+    <string name="age">سن</string>
+    <string name="height">قد</string>
+    <string name="weight">وزن</string>
+    <string name="nationality">ملیت</string>
+    <string name="goalKeeper">دروازه بان</string>
+    <string name="attacker">مهاجم</string>
+    <string name="defender"> مدافع </string>
+    <string name="midLine"> هافبک </string>
+    <string name="centiMeter"> سانتی متر </string>
+    <string name="killoGram"> کیلوگرم </string>
+    <string name="minute"> دقایق حضور </string>
+    <string name="matchCount"> تعداد بازی </string>
+    <string name="yaer"> سال </string>
+
+</resources>

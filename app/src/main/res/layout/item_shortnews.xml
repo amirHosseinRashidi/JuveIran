@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+
+    app:cardCornerRadius="@dimen/radius_normal"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iShortNews_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/colorAccent"
+            tools:text="@string/nameTest" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rimg_iShortNews_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:adjustViewBounds="true"
+            android:transitionName="shortNewsImage"
+            app:riv_corner_radius="@dimen/radius_normal"
+            tools:src="@drawable/pic_test"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:id="@+id/ll_iShortNews_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img_iShortNews_dateIcon"
+                    android:layout_width="@dimen/iconSize_small"
+                    android:layout_height="@dimen/iconSize_small"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_iShortNews_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_xsamll"
+                    android:layout_toEndOf="@id/img_iShortNews_dateIcon"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_xsmall"
+                    tools:text="97/4/6" />
+
+
+                <ImageView
+                    android:id="@+id/img_iShortNews_shareIcon"
+                    android:layout_width="@dimen/iconSize_small"
+                    android:layout_height="@dimen/iconSize_small"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:src="@drawable/ic_share_accent_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/imgBtn_iShortNews_commetns"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_circlebutton_white"
+                    android:padding="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_mode_comment_black_24dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iShortNews_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            tools:text="@string/lurem_medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dfdfdf" />
+
+        <LinearLayout
+            android:id="@+id/ll_iShortNews_sendComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:id="@+id/et_iShortNews_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:text="@string/fEnterComment_commentContent"
+                android:textSize="@dimen/textSize_small" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

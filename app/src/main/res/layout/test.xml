@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_Amain_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorToolbarBackground"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_Amain_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title=" ">
+
+
+            <ImageView
+                android:id="@+id/img_Amain_juveiranLogo"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:src="@drawable/logo_juveiran" />
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:id="@+id/tv_Amain_toolbarSite"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/bc_shoptext"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/shop"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize_small" />
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/fl_Amain_tabsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bnv_Amain_bottomMenu" />
+
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:id="@+id/bnv_Amain_bottomMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:itemIconTint="@drawable/selector_bottomnavigation"
+            app:itemTextColor="@drawable/selector_bottomnavigation"
+            app:menu="@menu/main_activity_bottomnavigation">
+
+        </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

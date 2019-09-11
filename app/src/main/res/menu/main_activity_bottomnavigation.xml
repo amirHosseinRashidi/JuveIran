@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_AmainBottomnavigation_playerStats"
+        android:icon="@drawable/ic_soccer_player"
+        android:title="@string/players"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_AmainBottomnavigation_gameResults"
+        android:icon="@drawable/ic_ball"
+        android:title="@string/gameResults"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_AmainBottomnavigation_news"
+        android:icon="@drawable/ic_news"
+        android:title="@string/bn_text_news"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_AmainBottomnavigation_leagueTable"
+        android:icon="@drawable/ic_cup"
+        android:title="@string/leagueTable"
+        app:showAsAction="always" />
+
+
+</menu>

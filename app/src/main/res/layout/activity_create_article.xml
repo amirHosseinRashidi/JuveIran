@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".activity.CreateArticleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_AcreateArticle_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:title=" ">
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:id="@+id/tv_AcreateArticle_toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="انتشار خبر"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize_toolbar" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_small"
+                    app:cardCornerRadius="@dimen/radius_normal"
+                    app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/rImg_AcreateArticle_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        tools:src="@drawable/pic_test"
+                        app:riv_corner_radius="@dimen/radius_normal" />
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    app:cardCornerRadius="@dimen/radius_normal">
+
+                    <com.khayyamapp.juveiran.custom_views.IranSansEditText
+                        android:id="@+id/et_AcreateArticle_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_medium"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginEnd="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_small"
+                        android:background="@color/textColor"
+                        android:hint="@string/aCreateArticle_titleText"
+                        android:textSize="@dimen/textSize_small" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    app:cardCornerRadius="@dimen/radius_normal">
+
+                    <com.khayyamapp.juveiran.custom_views.IranSansEditText
+                        android:id="@+id/et_AcreateArticle_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_medium"
+                        android:background="@color/textColor"
+                        android:hint="@string/aCreateArticle_contentText"
+                        android:textSize="@dimen/textSize_small" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/btn_AcreateArticle_enter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/aCreateArticle_enterArticle"
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_FcreateArticle_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColor"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

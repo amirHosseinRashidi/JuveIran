@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_FloginOrRegister_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bc_register" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDarkTransparent" />
+
+    <ImageView
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_juveiran_white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_FloginOrRegister_buttonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_small">
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/btn_FloginOrRegister_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/shape_login_button"
+            android:gravity="center"
+            android:text="@string/loginToAccount"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_buttons" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/btn_FloginOrRegister_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_button"
+            android:layout_below="@id/btn_FloginOrRegister_login"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/shape_register_button"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSize_buttons" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/txt_FloginOrRegister_getInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_FloginOrRegister_register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/getInToApp"
+            android:textColor="@color/textColor" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

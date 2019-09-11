@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl">
+
+    <com.khayyamapp.juveiran.custom_views.IranSansEditText
+        android:id="@+id/et_BSsendComment_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:hint="@string/fEnterComment_commentContent"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:textSize="@dimen/textSize_small" />
+
+    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+        android:id="@+id/tv_BSsendComment_submitComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:text="@string/submit"
+        android:textColor="@color/soccerColorAccentOff" />
+
+</LinearLayout>

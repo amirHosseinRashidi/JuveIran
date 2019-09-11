@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layoutDirection="rtl"
+    tools:context=".activity.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_AupdateProfile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:title=" ">
+
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aUpdateProfile_toolbarTitle"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSize_toolbar" />
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/view_AupdateProfile_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/tb_AupdateProfile_toolbar"
+            android:background="@color/colorPrimary" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rImg_AupdateProfile_userPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/view_AupdateProfile_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:riv_border_color="@color/textColor"
+            app:riv_border_width="@dimen/strokeSize_normal"
+            app:riv_corner_radius="75dp"
+            tools:src="@drawable/bc_register_phone" />
+
+
+        <ImageButton
+            android:id="@+id/btn_AupdateProfile_changePic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/rImg_AupdateProfile_userPic"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="-50dp"
+            android:layout_toStartOf="@id/rImg_AupdateProfile_userPic"
+            android:background="@drawable/shape_circlebutton_white"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera"
+            android:text="@string/aUpdateProfile_changePic"
+            android:textColor="@color/colorPrimaryDark" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_AupdateProfile_changeName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/view_AupdateProfile_view"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="-25dp"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_toEndOf="@id/rImg_AupdateProfile_userPic"
+            android:gravity="center"
+            app:cardCornerRadius="@dimen/radius_normal">
+
+            <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                android:id="@+id/tv_AupdateProfile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textSize_big"
+                tools:text="@string/nameTest" />
+
+            <com.khayyamapp.juveiran.custom_views.IranSansEditText
+                android:id="@+id/et_AupdateProfile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/textColor"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/textSize_big"
+                android:visibility="invisible"
+                tools:text="@string/nameTest" />
+
+            <ImageView
+                android:id="@+id/img_AupdateProfile_changeIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_margin="@dimen/margin_small"
+                android:src="@drawable/ic_create_accent_black_24dp" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/btn_AupdateProfile_upload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/btn_AupdateProfile_logOut"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/shape_register_button"
+            android:text="@string/aUpdateProfile_uploadText"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <com.khayyamapp.juveiran.custom_views.IranSansButton
+            android:id="@+id/btn_AupdateProfile_logOut"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/shape_logout_button_red"
+            android:text="@string/menuItem_logOut"
+            android:textColor="@color/textColor" />
+
+        <LinearLayout
+            android:id="@+id/ll__AupdateProfile_postsAndCommentsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll__AupdateProfile_userArticles"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/shape_circleborder"
+                android:orientation="vertical">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/sendedArticles"
+                    android:textColor="@color/textColor" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_AupdateProfile_numOfArticles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/textColor"
+                    android:textSize="22dp"
+                    tools:text="23" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll__AupdateProfile_userComments"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:background="@drawable/shape_circleborder"
+                android:orientation="vertical">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/comment"
+                    android:textColor="@color/textColor" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_AupdateProfile_numOfCommets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textColor="@color/textColor"
+                    android:textSize="22dp"
+                    tools:text="23" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--
+                <LinearLayout
+                    android:id="@+id/ll__AupdateProfile_userSaComments"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/ll__AupdateProfile_postsAndCommentsContainer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:background="@drawable/shape_circleborder"
+                    android:orientation="vertical">
+
+                    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:text="@string/sendedArticles"
+                        android:textColor="@color/textColor" />
+
+                    <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                        android:id="@+id/tv_AupdateProfile_numOfComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:textColor="@color/textColor"
+                        android:textSize="22dp"
+                        tools:text="23" />
+
+                </LinearLayout>
+        -->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_Aupdate_profile_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

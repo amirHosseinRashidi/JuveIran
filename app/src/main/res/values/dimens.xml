@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize_toolbar">16sp</dimen>
+    <dimen name="card_elevation_normal">10dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="imageSize_normal">120dp</dimen>
+    <dimen name="radius_normal">8dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_xsamll">4dp</dimen>
+    <dimen name="textSize_xsmall">10sp</dimen>
+    <dimen name="textSize_xxsmall">8sp</dimen>
+    <dimen name="iconSize_small">18dp</dimen>
+    <dimen name="iconSize_medium">20dp</dimen>
+    <dimen name="textSize_buttons">12sp</dimen>
+    <dimen name="height_button">50dp</dimen>
+    <dimen name="margin_large">26dp</dimen>
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_big">14sp</dimen>
+    <dimen name="strokeSize_normal">3dp</dimen>
+    <dimen name="textSize_numbers">19sp</dimen>
+    <dimen name="size_teamLogos">100dp</dimen>
+    <dimen name="divider_height">0.5dp</dimen>
+    <dimen name="textSizeNormal">13sp</dimen>
+    <dimen name="logo_size">160dp</dimen>
+</resources>

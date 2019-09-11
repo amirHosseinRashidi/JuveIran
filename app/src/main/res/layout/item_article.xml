@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="@dimen/margin_small"
+    android:elevation="@dimen/card_elevation_normal"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+
+    app:cardCornerRadius="@dimen/radius_normal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/rimg_iArticle_image"
+            android:layout_width="@dimen/imageSize_normal"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/radius_normal"
+            tools:src="@drawable/pic_test" />
+
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_iArticle_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_toEndOf="@id/rimg_iArticle_image"
+            android:maxLines="4"
+            tools:text="@string/lurem_long" />
+
+        <LinearLayout
+            android:id="@+id/ll_iShortNews_information"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_toEndOf="@id/rimg_iArticle_image"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/iconSize_small"
+                    android:layout_height="@dimen/iconSize_small"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_iArticle_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_xsamll"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_xsmall"
+                    tools:text="97/4/6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/iconSize_small"
+                    android:layout_height="@dimen/iconSize_small"
+                    android:src="@drawable/ic_views_24dp" />
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_iArticle_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_xsamll"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSize_xsmall"
+                    tools:text="4781" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

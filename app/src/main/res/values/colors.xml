@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#1b1e23</color>
+    <color name="colorPrimaryDarkLighter">#771B1E23</color>
+    <color name="colorPrimary">#21252b</color>
+    <color name="colorAccent">#21252b</color>
+    <color name="colorAccent2">#f5f6fa</color>
+
+    <color name="soccerColorAccentOff">#92fe5000</color>
+
+
+    <color name="soccerColorGrey">#BBBCBC</color>
+    <color name="textColor">#fff</color>
+    <color name="colorPrimaryDarkTransparent">#67041e42</color>
+    <color name="textColorDark">#ec1d1d1d</color>
+    <color name="red">#CF0E22</color>
+    <color name="dateColor">#96999999</color>
+    <color name="black_transparent">#45000000</color>
+    <color name="green">#009432</color>
+    <color name="gold">#ffd700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="boronz">#cd7f32</color>
+    <color name="colorToolbarBackground">#fff</color>
+    <color name="colorBottomNavigation">#fff</color>
+    <color name="colorBackgrounds">#fff</color>
+    <color name="white">#fff</color>
+    <color name="colorNon">#00111111</color>
+
+
+</resources>

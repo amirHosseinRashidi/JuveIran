@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:icon="@drawable/ic_category_24dp"
+        android:id="@+id/menu_Amain_category"
+        android:title="@string/menuItem_category" />
+    <item
+        android:icon="@drawable/ic_circle_24dp"
+        android:id="@+id/menu_Amain_articles"
+        android:title="@string/menuItem_articles" />
+    <item
+        android:icon="@drawable/ic_circle_24dp"
+        android:id="@+id/menu_Amain_shortNews"
+        android:title="@string/menuItem_shortArticles" />
+    <item
+        android:icon="@drawable/ic_site_24dp"
+        android:id="@+id/menu_Amain_openSite"
+        android:title="@string/menuItem_openSite" />
+
+    <item
+        android:id="@+id/menu_Amain_aboutUs"
+        android:icon="@drawable/ic_notification_juveiran"
+        android:title="@string/menuItem_aboutUs" />
+    <item
+        android:icon="@drawable/ic_exit_black_24dp"
+        android:id="@+id/menu_Amain_logOut"
+        android:title="@string/menuItem_logOut" />
+</menu>

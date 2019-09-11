@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".fragment.ArticleReadMoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_FarticleReadMore_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:title=" ">
+
+                <com.khayyamapp.juveiran.custom_views.IranSansTextView
+                    android:id="@+id/tv_FarticleReadMore_toolbarTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_toolbar" />
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        <WebView
+            android:id="@+id/wv_FarticleReadMore_webPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_FarticleReadMore_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColor"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_FarticleReadMore_errorPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textColor"
+        android:visibility="gone">
+
+        <com.khayyamapp.juveiran.custom_views.IranSansTextView
+            android:id="@+id/tv_FarticleReadMore_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/fArticleReadMore_errorPageText"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/img_FarticleReadMore_retry"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_FarticleReadMore_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/ic_retry_24dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
